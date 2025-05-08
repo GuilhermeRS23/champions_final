@@ -1,13 +1,46 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-BR">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcel Vanilla App</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UEFA Champions League Final | Inter x PSG</title>
+    <link rel="stylesheet" href="styles/main.scss" />
   </head>
   <body>
-    <h1>Parcel Vanilla App</h1>
-    <p>Edit <code>src/index.html</code> to get started!</p>
+    <header class="hero">
+      <div class="container">
+        <img
+          src="https://placehold.co/80x80/png"
+          alt="logo"
+          class="hero__logo"
+        />
+        <h3>
+          A grande final da UEFA Champions League está chegando
+          <span id="contagem">11d 11h 11min 11s</span>
+        </h3>
+        <div class="info-bar">
+          <ul class="info-bar__infos">
+            <li class="info-bar__infos__item">
+              <strong>Estádio</strong>
+              Allianz Arena - Munique, Alemanha
+            </li>
+          </ul>
+          <ul class="info-bar__infos">
+            <li class="info-bar__infos__item">
+              <strong>Valores</strong>
+              A partir de €90,000
+            </li>
+          </ul>
+          <ul class="info-bar__infos">
+            <li class="info-bar__infos__item">
+              <strong>Data</strong>
+              31/05/2025 - 16h
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>

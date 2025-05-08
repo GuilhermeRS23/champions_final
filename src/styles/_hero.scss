@@ -1,0 +1,52 @@
+.hero {
+  padding-top: 4rem;
+  padding-bottom: 6.25rem;
+  background-image: url("https://placehold.co/1366x520/png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .container {
+    position: relative;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: black;
+    opacity: 0.4;
+  }
+
+  &__text {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    height: 80px;
+    display: block;
+  }
+
+  @media (max-width: 640px) {
+    padding: 40px 0;
+
+    &__logo {
+      height: 40px;
+    }
+
+    &__text {
+      font-size: 22px;
+      line-height: 24px;
+      margin: 24px 0;
+    }
+  }
+}
