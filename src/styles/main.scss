@@ -1,7 +1,9 @@
 @use "variables";
 @use "hero";
+@use "event";
 @use "components/button";
 @use "components/infos-bar";
+@use "footer";
 
 * {
   margin: 0;
@@ -22,5 +24,11 @@
   }
   @media (max-width: 1024px) {
     max-width: 90%;
+  }
+
+  .text {
+    font-size: 12px;
+    line-height: 22px;
+    color: variables.$colorAzulClaro;
   }
 }

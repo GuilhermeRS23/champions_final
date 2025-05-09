@@ -1,3 +1,4 @@
+AOS.init();
 const dataEvento = new Date("May 31, 2025 16:00:00");
 const timeEvento = dataEvento.getTime();
 
