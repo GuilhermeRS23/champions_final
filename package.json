@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel",
+    "dev:watch": "npm run delete-folders && npm run dev",
+    "delete-folders": "rimraf ./dist",
+    "dev": "parcel",
     "build": "parcel build"
   },
   "devDependencies": {

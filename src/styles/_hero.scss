@@ -1,13 +1,21 @@
 .hero {
   padding-top: 4rem;
-  padding-bottom: 6.25rem;
-  background-image: url("https://placehold.co/1366x520/png");
+  padding-bottom: 6rem;
+  background-image: url("../imgs/banner.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 
   .container {
     position: relative;
+  }
+
+  .x {
+    font-size: 3rem;
+    display: none;
+    @media (max-width: 640px) {
+      display: block;
+    }
   }
 
   &::before {
@@ -30,23 +38,48 @@
     text-align: center;
   }
 
-  &__logo {
-    margin: 0 auto;
-    height: 80px;
-    display: block;
-  }
-
-  @media (max-width: 640px) {
-    padding: 40px 0;
+  &__logos {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
     &__logo {
-      height: 40px;
+      margin: 0 auto;
+
+      width: 100%;
+      display: block;
+
+      &--logo-central {
+        width: 50%;
+        @media (max-width: 640px) {
+          display: none;
+        }
+      }
     }
 
+    @media (max-width: 640px) {
+      padding: 40px 0;
+
+      &__logo {
+        height: 60px;
+      }
+    }
     &__text {
-      font-size: 22px;
+      font-size: 1.5rem;
       line-height: 24px;
       margin: 24px 0;
+    }
+  }
+
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+    gap: 5px;
+    @media (max-width: 640px) {
+      font-size: 1rem;
+      gap: 10px;
     }
   }
 }
